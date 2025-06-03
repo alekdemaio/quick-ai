@@ -5,3 +5,8 @@ body {
   max-width: 38rem;
   padding: 2rem;
 }
+
+.chats-and-active-chat {
+  display: flex;
+  flex-direction: row;
+}
