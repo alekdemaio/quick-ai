@@ -1,12 +1,29 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  margin: 0;  /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent body scrolling */
 }
 
 .chats-and-active-chat {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw; /* Full viewport width */
+}
+
+.chats {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+    max-width: 300px;
+    border-right: 1px solid #ccc; /* Optional: adds visual separation */
+}
+
+.active-chat {
+    flex: 1;
+    height: 100%;
+    padding: 20px; /* Add some padding for content */
 }
